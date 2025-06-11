@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Quem Somos</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleDropdown()">Divisões <span class="arrow">&#9660;</span></a>
+                <div class="dropdown-content" id="myDropdown"> <a href="#alcateia-titulo-section">Alcateia</a>
+                    <a href="#tribo-titulo-section">Tribo</a>
+                    <a href="#exploradores-titulo-section">Exploradores</a>
+                    <a href="#cla-titulo-section">Clã</a>
+                </div>
+            </li>
+            <li><a href="#gallery">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <video autoplay muted loop id="video-background">
+            <source src="assets/video/video.mp4" type="video/mp4" id="desktop-video-source">
+            <source data-src="assets/video/video_mobile.mp4" type="video/mp4" id="mobile-video-source">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-box">
+            <div class="about-text-content">
+                <h2>Quem Somos</h2>
+                <p>Somos uma equipa apaixonada dedicada a fornecer soluções inovadoras e experiências excecionais. A nossa missão é [A Sua Declaração de Missão] e a nossa visão é [A Sua Declaração de Visão]. Acreditamos em [Os Seus Valores Fundamentais].</p>
+            </div>
+            <div class="about-logo-content">
+                <img src="assets/img/logo.jpg" alt="Company Logo" class="about-logo">
+            </div>
+        </div>
+    </section>
+
+    <section id="alcateia-titulo-section" class="alcateia-titulo-section">
+        <video autoplay muted loop id="alcateia-titulo-video-background">
+            <source src="assets/video/video_divisions.mp4" type="video/mp4">
+            O teu navegador não suporta a tag de vídeo.
+        </video>
+    </section>
+
+    <section id="alcateia" class="alcateia-section">
+        <div class="alcateia-content">
+            <div class="alcateia-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Alcateia 1">
+                <h3 class="member-name">Nome 1</h3>
+                <p class="member-role">Cargo 1</p>
+            </div>
+            <div class="alcateia-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Alcateia 2">
+                <h3 class="member-name">Nome 2</h3>
+                <p class="member-role">Cargo 2</p>
+            </div>
+            <div class="alcateia-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Alcateia 3">
+                <h3 class="member-name">Nome 3</h3>
+                <p class="member-role">Cargo 3</p>
+            </div>
+            <div class="alcateia-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Alcateia 4">
+                <h3 class="member-name">Nome 4</h3>
+                <p class="member-role">Cargo 4</p>
+            </div>
+        </div>
+        <div class="division-text-box">
+            <h3>Sobre a Alcateia</h3>
+            <p>Aqui deve ser adicionado o texto justificado que explica como funciona a divisão da Alcateia. Este texto pode detalhar as atividades, objetivos e a faixa etária dos membros. Por exemplo, a Alcateia pode ser para os membros mais jovens, focada em jogos, histórias e desenvolvimento de valores através de atividades lúdicas e em grupo, promovendo a amizade e o respeito pela natureza.</p>
+            <p>A vida na Alcateia é cheia de aventuras e descobertas, onde cada elemento é incentivado a participar ativamente e a aprender brincando. As atividades são cuidadosamente planeadas para desenvolver a criatividade, a autonomia e o espírito de equipa, sempre com a orientação dos chefes.</p>
+        </div>
+    </section>
+
+    <section id="tribo-titulo-section" class="tribo-titulo-section">
+        <video autoplay muted loop id="tribo-titulo-video-background">
+            <source src="assets/video/video_tes.mp4" type="video/mp4">
+            O teu navegador não suporta a tag de vídeo.
+        </video>
+    </section>
+
+    <section id="tribo" class="tribo-section">
+        <div class="tribo-content">
+            <div class="tribo-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Tribo 1">
+                <h3 class="member-name">Nome 1</h3>
+                <p class="member-role">Cargo 1</p>
+            </div>
+            <div class="tribo-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Tribo 2">
+                <h3 class="member-name">Nome 2</h3>
+                <p class="member-role">Cargo 2</p>
+            </div>
+            <div class="tribo-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Tribo 3">
+                <h3 class="member-name">Nome 3</h3>
+                <p class="member-role">Cargo 3</p>
+            </div>
+            <div class="tribo-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Tribo 4">
+                <h3 class="member-name">Nome 4</h3>
+                <p class="member-role">Cargo 4</p>
+            </div>
+        </div>
+        <div class="division-text-box">
+            <h3>Sobre a Tribo</h3>
+            <p>Aqui deve ser adicionado o texto justificado que explica como funciona a divisão da Tribo. A Tribo, por exemplo, pode ser a divisão para adolescentes, com foco em atividades mais desafiadoras, desenvolvimento de habilidades de liderança e serviço à comunidade. O trabalho em equipa é fundamental, e os jovens são encorajados a tomar a iniciativa e a explorar os seus interesses.</p>
+            <p>Nesta fase, os membros da Tribo participam em projetos mais complexos e com maior responsabilidade, que contribuem para o seu crescimento pessoal e para o bem-estar do próximo. As aventuras ao ar livre e a superação de desafios são elementos chave desta divisão.</p>
+        </div>
+    </section>
+
+    <section id="exploradores-titulo-section" class="exploradores-titulo-section">
+        <video autoplay muted loop id="exploradores-titulo-video-background">
+            <source src="assets/video/video_exploradores.mp4" type="video/mp4">
+            O teu navegador não suporta a tag de vídeo.
+        </video>
+    </section>
+
+    <section id="exploradores" class="exploradores-section">
+        <div class="exploradores-content">
+            <div class="exploradores-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Exploradores 1">
+                <h3 class="member-name">Nome 1</h3>
+                <p class="member-role">Cargo 1</p>
+            </div>
+            <div class="exploradores-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Exploradores 2">
+                <h3 class="member-name">Nome 2</h3>
+                <p class="member-role">Cargo 2</p>
+            </div>
+            <div class="exploradores-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Exploradores 3">
+                <h3 class="member-name">Nome 3</h3>
+                <p class="member-role">Cargo 3</p>
+            </div>
+            <div class="exploradores-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Exploradores 4">
+                <h3 class="member-name">Nome 4</h3>
+                <p class="member-role">Cargo 4</p>
+            </div>
+        </div>
+        <div class="division-text-box">
+            <h3>Sobre os Exploradores</h3>
+            <p>Aqui deve ser adicionado o texto justificado que explica como funciona a divisão dos Exploradores. Esta divisão é ideal para jovens que buscam aprofundar suas habilidades em exploração, sobrevivência e atividades ao ar livre. O foco está na autonomia, na tomada de decisões e na preparação para desafios maiores, incentivando a liderança e a responsabilidade individual e coletiva.</p>
+            <p>Os Exploradores embarcam em expedições e projetos que exigem planejamento e execução, desenvolvendo a resiliência e a capacidade de adaptação em diferentes ambientes. A camaradagem e o apoio mútuo são pilares fundamentais desta experiência.</p>
+        </div>
+    </section>
+
+    <section id="cla-titulo-section" class="cla-titulo-section">
+        <video autoplay muted loop id="cla-titulo-video-background">
+            <source src="assets/video/video_cla.mp4" type="video/mp4">
+            O teu navegador não suporta a tag de vídeo.
+        </video>
+    </section>
+
+    <section id="cla" class="cla-section">
+        <div class="cla-content">
+            <div class="cla-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Clã 1">
+                <h3 class="member-name">Nome 1</h3>
+                <p class="member-role">Cargo 1</p>
+            </div>
+            <div class="cla-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Clã 2">
+                <h3 class="member-name">Nome 2</h3>
+                <p class="member-role">Cargo 2</p>
+            </div>
+            <div class="cla-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Clã 3">
+                <h3 class="member-name">Nome 3</h3>
+                <p class="member-role">Cargo 3</p>
+            </div>
+            <div class="cla-member">
+                <img src="assets/img/alcateia_member1.jpg" alt="Membro Clã 4">
+                <h3 class="member-name">Nome 4</h3>
+                <p class="member-role">Cargo 4</p>
+            </div>
+        </div>
+        <div class="division-text-box">
+            <h3>Sobre o Clã</h3>
+            <p>Aqui deve ser adicionado o texto justificado que explica como funciona a divisão do Clã. O Clã representa a fase final do percurso, onde os jovens adultos aplicam os seus conhecimentos e experiências em projetos de serviço à comunidade mais complexos e significativos. Esta divisão enfatiza a cidadania ativa, o desenvolvimento pessoal contínuo e a preparação para a vida adulta e para papéis de liderança.</p>
+            <p>Os membros do Clã assumem responsabilidades maiores, organizam e gerem os seus próprios projetos, e servem de exemplo e mentores para os mais novos, consolidando os valores adquiridos ao longo da sua jornada.</p>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
