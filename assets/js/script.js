@@ -1,5 +1,11 @@
 // Function to toggle the dropdown visibility
 function toggleDropdown() {
+    // Only execute if navbar is visible (i.e., not on mobile)
+    const navbar = document.querySelector('.navbar');
+    if (window.getComputedStyle(navbar).display === 'none') {
+        return; // Do nothing if navbar is hidden
+    }
+
     const dropdownContent = document.getElementById("myDropdown");
     dropdownContent.classList.toggle("show");
 
@@ -43,7 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                const yOffset = -80; // Ajusta se quiser compensar a navbar fixa
+                // Adjust yOffset based on whether the mobile logo is visible
+                let yOffset = -80; // Default for desktop with navbar
+                const mobileLogo = document.querySelector('.mobile-logo');
+                if (mobileLogo && window.getComputedStyle(mobileLogo).display !== 'none') {
+                    // If mobile logo is visible, adjust offset for it
+                    yOffset = -70; // Adjust this value to account for the height of your mobile logo + desired spacing
+                }
+
+
                 const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
                 window.scrollTo({

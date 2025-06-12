@@ -24,7 +24,7 @@ body {
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    width: 55%;
+    width: 35%;
     background-color: rgb(255, 255, 255);
     z-index: 1000;
     padding: 15px 0;
@@ -51,7 +51,7 @@ body {
     display: block;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.1em;
     position: relative;
     letter-spacing: 0.5px;
 }
@@ -687,7 +687,7 @@ body {
         border-radius: 8px;
     }
     .navbar ul li a {
-        font-size: 0.95em;
+        font-size: 0.8em;
         padding: 6px 10px;
     }
     .navbar .dropdown-content {
