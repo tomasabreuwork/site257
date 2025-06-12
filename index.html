@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
+    <title>GRUPO 257 - Póvoa</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Quem Somos</a></li>
+            <li><a href="#home">INÍCIO</a></li>
+            <li><a href="#about">QUEM SOMOS</a></li>
             <li class="dropdown">
-                <a href="#" class="dropbtn" onclick="toggleDropdown()">Divisões <span class="arrow">&#9660;</span></a>
-                <div class="dropdown-content" id="myDropdown"> <a href="#alcateia-titulo-section">Alcateia</a>
-                    <a href="#tribo-titulo-section">Tribo</a>
-                    <a href="#exploradores-titulo-section">Exploradores</a>
-                    <a href="#cla-titulo-section">Clã</a>
+                <a href="#" class="dropbtn" onclick="toggleDropdown()">DIVISÕES <span class="arrow">&#9660;</span></a>
+                <div class="dropdown-content" id="myDropdown"> <a href="#alcateia-titulo-section">ALCATEIA</a>
+                    <a href="#tribo-titulo-section">TRIBO</a>
+                    <a href="#exploradores-titulo-section">EXPLORADORES</a>
+                    <a href="#cla-titulo-section">CAMINHEIROS</a>
                 </div>
             </li>
-            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#gallery">GALERIA</a></li>
         </ul>
     </nav>
 
     <section id="home" class="hero-section">
+    <div class="video-overlay-wrapper">
         <video autoplay muted loop id="video-background">
             <source src="assets/video/video.mp4" type="video/mp4" id="desktop-video-source">
             <source data-src="assets/video/video_mobile.mp4" type="video/mp4" id="mobile-video-source">
             Your browser does not support the video tag.
         </video>
+        <div class="video-invisible-cover"></div>
+    </div>
     </section>
+
 
     <section id="about" class="about-section">
         <div class="about-box">
             <div class="about-text-content">
                 <h2>Quem Somos</h2>
+                <p>Somos uma equipa apaixonada dedicada a fornecer soluções inovadoras e experiências excecionais. A nossa missão é [A Sua Declaração de Missão] e a nossa visão é [A Sua Declaração de Visão]. Acreditamos em [Os Seus Valores Fundamentais].</p>
                 <p>Somos uma equipa apaixonada dedicada a fornecer soluções inovadoras e experiências excecionais. A nossa missão é [A Sua Declaração de Missão] e a nossa visão é [A Sua Declaração de Visão]. Acreditamos em [Os Seus Valores Fundamentais].</p>
             </div>
             <div class="about-logo-content">
@@ -45,7 +50,7 @@
 
     <section id="alcateia-titulo-section" class="alcateia-titulo-section">
         <video autoplay muted loop id="alcateia-titulo-video-background">
-            <source src="assets/video/video_divisions.mp4" type="video/mp4">
+            <source src="assets/video/video_alcateia.mp4" type="video/mp4">
             O teu navegador não suporta a tag de vídeo.
         </video>
     </section>
