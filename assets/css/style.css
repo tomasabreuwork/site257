@@ -324,6 +324,61 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* Styling for the new Chefia Título Section */
+.chefia-titulo-section {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 30vh;
+}
+
+#chefia-titulo-video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Styling for the new Chefia Section */
+.chefia-section {
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+
+
+
+/* Styling for jungle name */
+.jungle-name {
+    font-size: 0.9em; /* Smaller font size */
+    color: #777; /* Slightly lighter color */
+    margin-bottom: 5px; /* Small margin below jungle name */
+    font-weight: 500;
+    text-transform: uppercase; /* Optional: uppercase for distinction */
+}
+
+.chefia-member .member-name {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.chefia-member .member-role {
+    font-size: 1em;
+    color: #555;
+    font-weight: 400;
+}
+
 /* Renamed section: Alcateia Título Section */
 .alcateia-titulo-section {
     padding: 0;
@@ -353,39 +408,9 @@ body {
     text-align: center;
 }
 
-.alcateia-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.alcateia-member {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    width: 230px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.alcateia-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
 
-.alcateia-member img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #f5fc2a;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 .alcateia-member .member-name {
     font-size: 1.5em;
@@ -429,39 +454,9 @@ body {
     text-align: center;
 }
 
-.tribo-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.tribo-member {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    width: 230px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.tribo-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
 
-.tribo-member img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #28a745;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 .tribo-member .member-name {
     font-size: 1.5em;
@@ -505,39 +500,9 @@ body {
     text-align: center;
 }
 
-.exploradores-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.exploradores-member {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    width: 230px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.exploradores-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
 
-.exploradores-member img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #0077ff; /* Can be changed for 'Exploradores' specific color */
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 .exploradores-member .member-name {
     font-size: 1.5em;
@@ -581,39 +546,9 @@ body {
     text-align: center;
 }
 
-.cla-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.cla-member {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    width: 230px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.cla-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
 
-.cla-member img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #ff0000; /* Can be changed for 'Clã' specific color */
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 .cla-member .member-name {
     font-size: 1.5em;
@@ -663,19 +598,32 @@ body {
         transform: translateX(-50%);
         width: 70%;
     }
-    .alcateia-member, .tribo-member, .exploradores-member, .cla-member { /* Aplicar a todos */
+    .division-section, .gallery-section {
+        padding: 40px 15px;
+    }
+    .alcateia-content, .tribo-content, .exploradores-content, .cla-content, .chefia-content { /* Aplicar a todos */
+        gap: 20px;
+    }
+    .alcateia-member, .tribo-member, .exploradores-member, .cla-member, .chefia-member { /* Aplicar a todos */
         width: 200px;
         padding: 20px;
     }
-    .alcateia-member img, .tribo-member img, .exploradores-member img, .cla-member img { /* Aplicar a todos */
+    .alcateia-member img, .tribo-member img, .exploradores-member img, .cla-member img, .chefia-member img { /* Aplicar a todos */
         width: 140px;
         height: 140px;
     }
-    .alcateia-member .member-name, .tribo-member .member-name, .exploradores-member .member-name, .cla-member .member-name {
+    .alcateia-member .member-name, .tribo-member .member-name, .exploradores-member .member-name, .cla-member .member-name, .chefia-member .member-name {
         font-size: 1.3em;
     }
-    .alcateia-member .member-role, .tribo-member .member-role, .exploradores-member .member-role, .cla-member .member-role {
+    .alcateia-member .member-role, .tribo-member .member-role, .exploradores-member .member-role, .cla-member .member-role, .chefia-member .member-role {
         font-size: 0.95em;
+    }
+    .chefia-titulo-section { /* Added for Chefia responsiveness */
+        height: 25vh;
+    }
+    /* Responsive for jungle name */
+    .jungle-name {
+        font-size: 0.8em;
     }
 }
 
@@ -716,39 +664,46 @@ body {
     .division-section, .gallery-section {
         padding: 40px 15px;
     }
-    .alcateia-content, .tribo-content, .exploradores-content, .cla-content { /* Aplicar a todos */
+    .alcateia-content, .tribo-content, .exploradores-content, .cla-content, .chefia-content { /* Aplicar a todos */
         gap: 20px;
     }
-    .alcateia-member, .tribo-member, .exploradores-member, .cla-member { /* Aplicar a todos */
+    .alcateia-member, .tribo-member, .exploradores-member, .cla-member, .chefia-member { /* Aplicar a todos */
         width: 160px;
         padding: 15px;
     }
-    .alcateia-member img, .tribo-member img, .exploradores-member img, .cla-member img { /* Aplicar a todos */
+    .alcateia-member img, .tribo-member img, .exploradores-member img, .cla-member img, .chefia-member img { /* Aplicar a todos */
         width: 100px;
         height: 100px;
     }
-    .alcateia-member .member-name, .tribo-member .member-name, .exploradores-member .member-name, .cla-member .member-name {
+    .alcateia-member .member-name, .tribo-member .member-name, .exploradores-member .member-name, .cla-member .member-name, .chefia-member .member-name {
         font-size: 1.2em;
     }
-    .alcateia-member .member-role, .tribo-member .member-role, .exploradores-member .member-role, .cla-member .member-role {
+    .alcateia-member .member-role, .tribo-member .member-role, .exploradores-member .member-role, .cla-member .member-role, .chefia-member .member-role {
         font-size: 0.9em;
+    }
+    .chefia-titulo-section { /* Added for Chefia responsiveness */
+        height: 20vh;
+    }
+    /* Responsive for jungle name */
+    .jungle-name {
+        font-size: 0.75em;
     }
 }
 
 @media (max-width: 480px) {
-    .alcateia-section, .tribo-section, .exploradores-section, .cla-section { /* Aplicar< a todos */
+    .alcateia-section, .tribo-section, .exploradores-section, .cla-section, .chefia-section { /* Aplicar< a todos */
         padding: 60px 15px;
     }
-    .alcateia-content, .tribo-content, .exploradores-content, .cla-content { /* Aplicar a todos */
+    .alcateia-content, .tribo-content, .exploradores-content, .cla-content, .chefia-content { /* Aplicar a todos */
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-    .alcateia-member, .tribo-member, .exploradores-member, .cla-member { /* Aplicar a todos */
+    .alcateia-member, .tribo-member, .exploradores-member, .cla-member, .chefia-member { /* Aplicar a todos */
         width: 80%;
         max-width: 220px;
     }
-    .alcateia-member img, .tribo-member img, .exploradores-member img, .cla-member img { /* Aplicar a todos */
+    .alcateia-member img, .tribo-member img, .exploradores-member img, .cla-member img, .chefia-member img { /* Aplicar a todos */
         width: 120px;
         height: 120px;
     }
@@ -846,7 +801,113 @@ body {
 .alcateia-titulo-section,
 .tribo-titulo-section,
 .exploradores-titulo-section,
-.cla-titulo-section {
+.cla-titulo-section,
+.chefia-titulo-section { /* Added chefia-titulo-section */
     position: relative;
     z-index: 0;
+}
+
+/* CHEFIAS, ALCATEIA, TRIBO, EXPLORADORES, CLÃ - Membr@s */
+.chefia-member,
+.alcateia-member,
+.tribo-member,
+.exploradores-member,
+.cla-member {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 18%;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chefia-member:hover,
+.alcateia-member:hover,
+.tribo-member:hover,
+.exploradores-member:hover,
+.cla-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.chefia-member img,
+.alcateia-member img,
+.tribo-member img,
+.exploradores-member img,
+.cla-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+    border: 4px solid #ccc; /* Podes personalizar por divisão */
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chefia-member .member-name,
+.alcateia-member .member-name,
+.tribo-member .member-name,
+.exploradores-member .member-name,
+.cla-member .member-name {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.chefia-member .member-role,
+.alcateia-member .member-role,
+.tribo-member .member-role,
+.exploradores-member .member-role,
+.cla-member .member-role {
+    font-size: 1em;
+    color: #555;
+    font-weight: 400;
+}
+
+/* CONTAINERS: largura aumentada para caber 5 em linha */
+.chefia-content,
+.alcateia-content,
+.tribo-content,
+.exploradores-content,
+.cla-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* RESPONSIVE AJUSTES */
+@media (max-width: 992px) {
+    .chefia-member,
+    .alcateia-member,
+    .tribo-member,
+    .exploradores-member,
+    .cla-member {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .chefia-member,
+    .alcateia-member,
+    .tribo-member,
+    .exploradores-member,
+    .cla-member {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .chefia-member,
+    .alcateia-member,
+    .tribo-member,
+    .exploradores-member,
+    .cla-member {
+        width: 90%;
+    }
 }
