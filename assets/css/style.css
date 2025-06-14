@@ -24,7 +24,7 @@ body {
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    width: 35%;
+    width: 45%;
     background-color: rgb(255, 255, 255);
     z-index: 1000;
     padding: 15px 0;
@@ -353,6 +353,81 @@ body {
     text-align: center;
 }
 
+/* Styles for the default image */
+.chefia-member .default-image,
+.alcateia-member .default-image,
+.tribo-member .default-image,
+.exploradores-member .default-image,
+.cla-member .default-image {
+    display: block; /* Ensure it's displayed by default */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade for default image */
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+    border: 4px solid #0b5701;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the hover image */
+.chefia-member .hover-image,
+.alcateia-member .hover-image,
+.tribo-member .hover-image,
+.exploradores-member .hover-image,
+.cla-member .hover-image {
+    display: block; /* Ensure it takes up space, but it will be hidden by opacity */
+    position: absolute; /* Position it on top of the default image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0; /* Or match default image border-radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Match default image shadow */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade for hover image */
+}
+
+/* Ensure the parent container has position relative for absolute positioning of hover image */
+.chefia-member,
+.alcateia-member,
+.tribo-member,
+.exploradores-member,
+.cla-member {
+    position: relative; /* Crucial for positioning the hover image */
+    overflow: hidden; /* Hide parts of the image that might exceed the member box on hover if not cropped correctly */
+}
+
+/* On hover, hide the default image and show the hover image */
+.chefia-member:hover .default-image,
+.alcateia-member:hover .default-image,
+.tribo-member:hover .default-image,
+.exploradores-member:hover .default-image,
+.cla-member:hover .default-image {
+    opacity: 0;
+}
+
+.chefia-member:hover .hover-image,
+.alcateia-member:hover .hover-image,
+.tribo-member:hover .hover-image,
+.exploradores-member:hover .hover-image,
+.cla-member:hover .hover-image {
+    opacity: 1;
+}
+
+/* Adjust the member image sizing within the box */
+.chefia-member img,
+.alcateia-member img,
+.tribo-member img,
+.exploradores-member img,
+.cla-member img {
+    /* These styles are now handled by .default-image and .hover-image */
+    /* You can remove these if you prefer, but they won't cause issues */
+    border: none;
+    box-shadow: none;
+}
 
 
 
@@ -832,19 +907,8 @@ body {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-.chefia-member img,
-.alcateia-member img,
-.tribo-member img,
-.exploradores-member img,
-.cla-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    object-fit: cover;
-    border: 4px solid #ccc; /* Podes personalizar por divisão */
-    margin-bottom: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+/* Removed specific img styling as it's now handled by .default-image and .hover-image */
+
 
 .chefia-member .member-name,
 .alcateia-member .member-name,
@@ -910,4 +974,132 @@ body {
     .cla-member {
         width: 90%;
     }
+}
+
+/* Contactos Title Section Styling (same as home) */
+.contactos-titulo-section {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 30vh; /* Adjust height as needed */
+}
+
+#contactos-titulo-video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Contactos Section Styling */
+.contactos-section {
+    padding: 80px 20px;
+    background-color: #f0f0f0; /* Or adjust to match other content sections */
+    text-align: center;
+}
+
+.contactos-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Space between map and button */
+}
+
+.map-container {
+    width: 100%;
+    max-width: 900px; /* Max width for the map */
+    border-radius: 15px;
+    overflow: hidden; /* Ensures border-radius applies to the iframe */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px; /* Fixed height for the map */
+    border: 0;
+}
+
+.queue-button {
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.queue-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments for Contactos section */
+@media (max-width: 992px) {
+    .contactos-titulo-section {
+        height: 25vh;
+    }
+    .map-container iframe {
+        height: 350px;
+    }
+    .queue-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactos-titulo-section {
+        height: 20vh;
+    }
+    .contactos-section {
+        padding: 60px 15px;
+    }
+    .map-container iframe {
+        height: 300px;
+    }
+    .queue-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactos-titulo-section {
+        height: 15vh;
+    }
+    .contactos-section {
+        padding: 40px 10px;
+    }
+    .map-container iframe {
+        height: 250px;
+    }
+    .queue-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Ensure the new section's video background has z-index 0 */
+.hero-section,
+.alcateia-titulo-section,
+.tribo-titulo-section,
+.exploradores-titulo-section,
+.cla-titulo-section,
+.chefia-titulo-section,
+.contactos-titulo-section { /* Added contactos-titulo-section */
+    position: relative;
+    z-index: 0;
 }
