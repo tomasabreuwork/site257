@@ -307,6 +307,7 @@ body {
     font-size: 1.25em;
     line-height: 1.8;
     color: #555;
+    text-align: justify;
 }
 
 .about-logo-content {
@@ -1102,4 +1103,51 @@ body {
 .contactos-titulo-section { /* Added contactos-titulo-section */
     position: relative;
     z-index: 0;
+}
+
+/* Navbar simplificada para mobile com botão estilizado */
+.mobile-only-link {
+    display: none;
+    text-align: center;
+}
+
+.mobile-only-link a {
+    display: inline-block;
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mobile-only-link a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* esconde o menu completo */
+    }
+
+    .mobile-only-link {
+        display: block;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        top: 0;
+        position: fixed;
+        z-index: 1000;
+    }
 }
