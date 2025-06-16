@@ -24,10 +24,10 @@ body {
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    width: 45%;
+    width: 40%; /* Decreased width from 45% to 40% */
     background-color: rgb(255, 255, 255);
     z-index: 1000;
-    padding: 15px 0;
+    padding: 10px 0; /* Decreased padding from 15px 0 to 10px 0 */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
     backdrop-filter: blur(8px);
     border: 4px solid transparent;
@@ -47,11 +47,11 @@ body {
 .navbar ul li a {
     color: #1a5e2f;
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 10px 20px; /* Decreased padding from 12px 25px to 10px 20px */
     display: block;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1em; /* Decreased font size from 1.1em to 1em */
     position: relative;
     letter-spacing: 0.5px;
 }
@@ -90,7 +90,12 @@ body {
 .navbar .dropdown .dropbtn {
     padding-right: 30px;
     position: relative;
-    cursor: pointer; /* Indicate it's clickable */
+    cursor: pointer;
+    /* Remove the arrow span and use a background image instead */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%231a5e2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
 }
 
 /* Styling for the dropbtn when it's active (clicked) */
@@ -119,17 +124,9 @@ body {
     width: calc(100% - 30px);
 }
 
-.navbar .dropdown .dropbtn .arrow {
-    font-size: 0.75em;
-    margin-left: 8px;
-    vertical-align: middle;
-    transition: transform 0.3s ease;
-    color: #1a5e2f;
-}
-
 /* Rotate arrow on active state */
-.navbar .dropdown .dropbtn.active .arrow {
-    transform: rotate(180deg);
+.navbar .dropdown .dropbtn.active {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23156d2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 15 12 9 18 15"></polyline></svg>');
 }
 
 .navbar .dropdown-content {
@@ -256,25 +253,25 @@ body {
 
 /* About Section Styling */
 .about-section {
-    padding: 100px 20px;
+    padding: 50px 20px;
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
+    min-height: 55vh; /* Reduced from 60vh to 55vh to decrease height */
 }
 
 .about-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1200px; /* Increased from 1000px to 1100px to slightly increase width */
     width: 90%;
     background-color: #ffffff;
-    padding: 70px;
+    padding: 50px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    gap: 70px;
+    gap: 50px;
 }
 
 .about-text-content {
@@ -283,7 +280,7 @@ body {
 }
 
 .about-text-content h2 {
-    font-size: 2.8em;
+    font-size: 2.2em;
     color: #333;
     margin-bottom: 25px;
     border-bottom: none;
@@ -304,7 +301,7 @@ body {
 }
 
 .about-text-content p {
-    font-size: 1.25em;
+    font-size: 1.1em;
     line-height: 1.8;
     color: #555;
     text-align: justify;
@@ -367,9 +364,26 @@ body {
     height: auto;
     border-radius: 0;
     object-fit: cover;
-    border: 4px solid #0b5701;
+    border: 4px solid #dbdbdb; /* This is the default green for Chefia */
     margin-bottom: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific border colors for each division */
+.alcateia-member .default-image {
+    border: 4px solid #fdffa3; /* Amarelo */
+}
+
+.tribo-member .default-image {
+    border: 4px solid #006618; /* Verde */
+}
+
+.exploradores-member .default-image {
+    border: 4px solid #000080; /* Azul Escuro */
+}
+
+.cla-member .default-image {
+    border: 4px solid #dc3545; /* Vermelho */
 }
 
 /* Styles for the hover image */
@@ -737,6 +751,13 @@ body {
     .about-text-content h2::after {
         width: 80%;
     }
+    /* Smaller font sizes for "Quem Somos" section on smaller screens */
+    .about-text-content h2 {
+        font-size: 2em; /* Reduced from 2.8em */
+    }
+    .about-text-content p {
+        font-size: 1.1em; /* Reduced from 1.25em */
+    }
     .division-section, .gallery-section {
         padding: 40px 15px;
     }
@@ -782,6 +803,19 @@ body {
     .alcateia-member img, .tribo-member img, .exploradores-member img, .cla-member img, .chefia-member img { /* Aplicar a todos */
         width: 120px;
         height: 120px;
+    }
+    .about-box {
+        padding: 20px;
+        gap: 20px;
+    }
+    .about-logo {
+        width: 200px; /* Further reduced image size */
+    }
+    .about-text-content h2 {
+        font-size: 1.8em; /* Further reduced */
+    }
+    .about-text-content p {
+        font-size: 1em; /* Further reduced */
     }
 }
 /* Styling for the new division text box */
@@ -1021,6 +1055,10 @@ body {
     border-radius: 15px;
     overflow: hidden; /* Ensures border-radius applies to the iframe */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    /* NEW: Gradient Border for the map container */
+    border: 4px solid transparent; /* Set a transparent border base */
+    border-image: linear-gradient(to right, #28a745, #ffc107, #dc3545) 1; /* Apply the gradient border */
+    border-image-slice: 1; /* Ensure the entire border uses the image */
 }
 
 .map-container iframe {
